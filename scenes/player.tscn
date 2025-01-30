@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6emmm2mhjrr7"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_rl80v"]
+[ext_resource type="Texture2D" uid="uid://cyb5rg6nl4ehl" path="res://assets/CatFrames.png" id="1_sapgn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bqpcp"]
+size = Vector2(17, 5)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_rl80v")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.5, 6.5)
+shape = SubResource("RectangleShape2D_bqpcp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2, -1)
+texture = ExtResource("1_sapgn")
+hframes = 2
+vframes = 2
+
+[node name="Camera2D" type="Camera2D" parent="."]
+process_callback = 0
+position_smoothing_enabled = true
