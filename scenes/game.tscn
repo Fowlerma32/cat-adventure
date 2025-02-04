@@ -16,6 +16,7 @@ sources/0 = SubResource("TileSetAtlasSource_j2id6")
 [node name="Game" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("1_wfcfe")]
+script = null
 
 [node name="TileMap" type="TileMap" parent="."]
 z_index = -1
