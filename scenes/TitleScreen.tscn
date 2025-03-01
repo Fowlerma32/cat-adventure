@@ -1,3 +1,47 @@
-[gd_scene format=3 uid="uid://fgpf52kny7xk"]
+[gd_scene load_steps=2 format=3 uid="uid://fgpf52kny7xk"]
 
-[node name="Title Screen" type="Node2D"]
+[ext_resource type="Script" path="res://scripts/title_screen.gd" id="1_03xdk"]
+
+[node name="Title Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_03xdk")
+
+[node name="NewGame" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -22.0
+offset_top = -19.0
+offset_right = 22.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 6
+text = "New Game"
+
+[node name="Quit" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -22.0
+offset_top = 2.0
+offset_right = 22.0
+offset_bottom = 19.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 6
+text = "Quit"
+
+[connection signal="pressed" from="NewGame" to="." method="_on_new_game_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
