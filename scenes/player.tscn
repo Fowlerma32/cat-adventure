@@ -1,12 +1,54 @@
-[gd_scene load_steps=4 format=3 uid="uid://c6emmm2mhjrr7"]
+[gd_scene load_steps=9 format=3 uid="uid://c6emmm2mhjrr7"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_rl80v"]
-[ext_resource type="Texture2D" uid="uid://cyb5rg6nl4ehl" path="res://assets/CatFrames.png" id="1_sapgn"]
+[ext_resource type="Texture2D" uid="uid://d0yxjes7d4uf7" path="res://assets/Mayor Design.png" id="2_gkicd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bqpcp"]
 size = Vector2(17, 5)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_mmvcp"]
+atlas = ExtResource("2_gkicd")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ganec"]
+atlas = ExtResource("2_gkicd")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qxi85"]
+atlas = ExtResource("2_gkicd")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f8vvv"]
+atlas = ExtResource("2_gkicd")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_sl644"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mmvcp")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ganec")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qxi85")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f8vvv")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
 [node name="Player" type="CharacterBody2D"]
+z_index = 5
 script = ExtResource("1_rl80v")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -14,12 +56,9 @@ position = Vector2(0.5, 6.5)
 rotation = -3.11018
 shape = SubResource("RectangleShape2D_bqpcp")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(2, -1)
-texture = ExtResource("1_sapgn")
-hframes = 2
-vframes = 2
-
 [node name="Camera2D" type="Camera2D" parent="."]
 process_callback = 0
-position_smoothing_enabled = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_sl644")
+animation = &"idle"
