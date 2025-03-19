@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://2dqq6xmtq217"
+path="res://.godot/imported/After_mquest.dialogue-f20c51629715514f7e1746c9af11bf95.tres"
+
+[deps]
+
+source_file="res://Dialouges/After_mquest.dialogue"
+dest_files=["res://.godot/imported/After_mquest.dialogue-f20c51629715514f7e1746c9af11bf95.tres"]
+
+[params]
+
+defaults=true

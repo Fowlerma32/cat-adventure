@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://brem33rjubeqi"
+path="res://.godot/imported/Marble_info.dialogue-54a259de0e5c0b27247515cc48cdb963.tres"
+
+[deps]
+
+source_file="res://Dialouges/Marble_info.dialogue"
+dest_files=["res://.godot/imported/Marble_info.dialogue-54a259de0e5c0b27247515cc48cdb963.tres"]
+
+[params]
+
+defaults=true
