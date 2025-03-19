@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=4 uid="uid://byljmo7l7sihi"]
+[gd_scene load_steps=23 format=4 uid="uid://byljmo7l7sihi"]
 
 [ext_resource type="Script" path="res://scripts/main_map.gd" id="1_jh6ab"]
 [ext_resource type="Texture2D" uid="uid://bnltw158v20k2" path="res://assets/Dirt.png" id="1_khlic"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://d3adbvjrofbnj" path="res://assets/Borders.png" id="6_u0jl4"]
 [ext_resource type="Texture2D" uid="uid://bcna2q7ayjsaw" path="res://assets/CityHall.png" id="7_ck64s"]
 [ext_resource type="Texture2D" uid="uid://c4qs657uvu4ag" path="res://assets/Trees.png" id="7_eycnk"]
+[ext_resource type="PackedScene" uid="uid://chabu1wrhnf3b" path="res://scenes/npc.tscn" id="9_wmap6"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_1sih3"]
 tile_data = PackedInt32Array(0, 65542, 4, 65536, 6, 1610612737, 131072, 589830, 268435458, 196608, 589830, 268435459, 262144, 65542, 4, 1, 6, 4, 65537, 6, 1610612738, 131073, 524294, 268435458, 196609, 524294, 268435459, 262145, 262151, 8, 2, 65542, 4, 65538, 6, 1610612738, 131074, 458758, 3, 196610, 458758, 268435459, 262146, 327687, 8, 3, 262150, 1342177283, 65539, 327686, 1342177283, 131075, 458758, 3, 196611, 393222, 268435459, 262147, 393223, 8, 4, 131078, 4, 65540, 327686, 1342177282, 131076, 393222, 1342177282, 196612, 327686, 268435459, 262148, 458759, 8, 5, 131078, 4, 65541, 196614, 4, 131077, 196614, 4, 196613, 458758, 1342177281, 262149, 524294, 1342177281)
@@ -673,6 +674,8 @@ tile_set = SubResource("TileSet_dn7qf")
 [node name="Buildings" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAD7//n/AAAAAAAAAAD7//r/AAAAAAEAAAD7//v/AAAAAAIAAAD7//z/AAAAAAMAAAD7//3/AAAAAAQAAAD7//7/AAAAAAUAAAD8//n/AAABAAAAAAD8//r/AAABAAEAAAD8//v/AAABAAIAAAD8//z/AAABAAMAAAD8//3/AAABAAQAAAD8//7/AAABAAUAAAD9//n/AAACAAAAAAD9//r/AAACAAEAAAD9//v/AAACAAIAAAD9//z/AAACAAMAAAD9//3/AAACAAQAAAD9//7/AAACAAUAAAD+//n/AAADAAAAAAD+//r/AAADAAEAAAD+//v/AAADAAIAAAD+//z/AAADAAMAAAD+//3/AAADAAQAAAD+//7/AAADAAUAAAD///n/AAAEAAAAAAD///r/AAAEAAEAAAD///v/AAAEAAIAAAD///z/AAAEAAMAAAD///3/AAAEAAQAAAD///7/AAAEAAUAAAAAAPn/AAAFAAAAAAAAAPr/AAAFAAEAAAAAAPv/AAAFAAIAAAAAAPz/AAAFAAMAAAAAAP3/AAAFAAQAAAAAAP7/AAAFAAUAAAABAPn/AAAGAAAAAAABAPr/AAAGAAEAAAABAPv/AAAGAAIAAAABAPz/AAAGAAMAAAABAP3/AAAGAAQAAAABAP7/AAAGAAUAAAACAPn/AAAHAAAAAAACAPr/AAAHAAEAAAACAPv/AAAHAAIAAAACAPz/AAAHAAMAAAACAP3/AAAHAAQAAAACAP7/AAAHAAUAAAADAPn/AAAIAAAAAAADAPr/AAAIAAEAAAADAPv/AAAIAAIAAAADAPz/AAAIAAMAAAADAP3/AAAIAAQAAAADAP7/AAAIAAUAAAAEAPn/AAAJAAAAAAAEAPr/AAAJAAEAAAAEAPv/AAAJAAIAAAAEAPz/AAAJAAMAAAAEAP3/AAAJAAQAAAAEAP7/AAAJAAUAAAA=")
 tile_set = SubResource("TileSet_7bpu7")
+
+[node name="Messenger" parent="." instance=ExtResource("9_wmap6")]
 
 [connection signal="body_entered" from="MainToForestTransition" to="." method="_on_main_to_forest_transition_body_entered"]
 [connection signal="body_exited" from="MainToForestTransition" to="." method="_on_main_to_forest_transition_body_exited"]
