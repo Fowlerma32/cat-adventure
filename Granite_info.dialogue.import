@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://dbpn2i51finma"
+path="res://.godot/imported/Granite_info.dialogue-89dc594ac4bb9e7061269ef789a39df3.tres"
+
+[deps]
+
+source_file="res://Granite_info.dialogue"
+dest_files=["res://.godot/imported/Granite_info.dialogue-89dc594ac4bb9e7061269ef789a39df3.tres"]
+
+[params]
+
+defaults=true

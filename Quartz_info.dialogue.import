@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://cotf22h63u0ii"
+path="res://.godot/imported/Quartz_info.dialogue-1243d2bb46ce23d42ae0219d3340da07.tres"
+
+[deps]
+
+source_file="res://Quartz_info.dialogue"
+dest_files=["res://.godot/imported/Quartz_info.dialogue-1243d2bb46ce23d42ae0219d3340da07.tres"]
+
+[params]
+
+defaults=true
