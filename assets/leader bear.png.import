@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1hr3iwi0suuq"
-path="res://.godot/imported/Mayor Design.png-bb5fdeb45f41e0fdc0ee8935056eea26.ctex"
+uid="uid://d1pj4lk823kxd"
+path="res://.godot/imported/leader bear.png-965176d134925891bb571b73e18f4401.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Mayor Design.png"
-dest_files=["res://.godot/imported/Mayor Design.png-bb5fdeb45f41e0fdc0ee8935056eea26.ctex"]
+source_file="res://assets/leader bear.png"
+dest_files=["res://.godot/imported/leader bear.png-965176d134925891bb571b73e18f4401.ctex"]
 
 [params]
 

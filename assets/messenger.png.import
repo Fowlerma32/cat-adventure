@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1hr3iwi0suuq"
-path="res://.godot/imported/Mayor Design.png-bb5fdeb45f41e0fdc0ee8935056eea26.ctex"
+uid="uid://dggje6u4upcm"
+path="res://.godot/imported/messenger.png-3ff688c29f713d07329185bc9bfd98b8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Mayor Design.png"
-dest_files=["res://.godot/imported/Mayor Design.png-bb5fdeb45f41e0fdc0ee8935056eea26.ctex"]
+source_file="res://assets/messenger.png"
+dest_files=["res://.godot/imported/messenger.png-3ff688c29f713d07329185bc9bfd98b8.ctex"]
 
 [params]
 

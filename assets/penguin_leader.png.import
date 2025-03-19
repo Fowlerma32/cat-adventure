@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1hr3iwi0suuq"
-path="res://.godot/imported/Mayor Design.png-bb5fdeb45f41e0fdc0ee8935056eea26.ctex"
+uid="uid://dtt8vtgkvi45c"
+path="res://.godot/imported/penguin_leader.png-729f97771e9ac94339083d6af135f018.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Mayor Design.png"
-dest_files=["res://.godot/imported/Mayor Design.png-bb5fdeb45f41e0fdc0ee8935056eea26.ctex"]
+source_file="res://assets/penguin_leader.png"
+dest_files=["res://.godot/imported/penguin_leader.png-729f97771e9ac94339083d6af135f018.ctex"]
 
 [params]
 

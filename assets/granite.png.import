@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1hr3iwi0suuq"
-path="res://.godot/imported/Mayor Design.png-bb5fdeb45f41e0fdc0ee8935056eea26.ctex"
+uid="uid://dsi1j4qj6hkb8"
+path="res://.godot/imported/granite.png-ed1bbefbbadd4efb5d40c7832b3a2a2b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Mayor Design.png"
-dest_files=["res://.godot/imported/Mayor Design.png-bb5fdeb45f41e0fdc0ee8935056eea26.ctex"]
+source_file="res://assets/granite.png"
+dest_files=["res://.godot/imported/granite.png-ed1bbefbbadd4efb5d40c7832b3a2a2b.ctex"]
 
 [params]
 

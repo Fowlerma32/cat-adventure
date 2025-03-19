@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1hr3iwi0suuq"
-path="res://.godot/imported/Mayor Design.png-bb5fdeb45f41e0fdc0ee8935056eea26.ctex"
+uid="uid://dvc856em08vyq"
+path="res://.godot/imported/polar_bear.png-c768751993e616e2d431d13993951724.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Mayor Design.png"
-dest_files=["res://.godot/imported/Mayor Design.png-bb5fdeb45f41e0fdc0ee8935056eea26.ctex"]
+source_file="res://assets/polar_bear.png"
+dest_files=["res://.godot/imported/polar_bear.png-c768751993e616e2d431d13993951724.ctex"]
 
 [params]
 
