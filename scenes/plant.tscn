@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://bx5o6gqimptrf"]
+
+[ext_resource type="Script" path="res://scripts/plant.gd" id="1_u1w1o"]
+
+[node name="Plant" type="VBoxContainer"]
+offset_right = 19.0
+offset_bottom = 27.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_u1w1o")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 11
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2

@@ -1,0 +1,52 @@
+[gd_scene load_steps=4 format=3 uid="uid://i17x1a4she7e"]
+
+[ext_resource type="Script" path="res://scripts/mini_game.gd" id="1_7w4au"]
+[ext_resource type="PackedScene" uid="uid://bx5o6gqimptrf" path="res://scenes/plant.tscn" id="1_oqhmd"]
+[ext_resource type="PackedScene" uid="uid://4jm1m6r1hh5q" path="res://scenes/barrel.tscn" id="3_m655c"]
+
+[node name="MiniGame" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_7w4au")
+plant_scene = ExtResource("1_oqhmd")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+layout_mode = 0
+offset_left = 129.0
+offset_top = 26.0
+offset_right = 279.0
+offset_bottom = 155.0
+columns = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 146.0
+offset_top = 178.0
+offset_right = 257.0
+offset_bottom = 247.0
+theme_override_constants/separation = 80
+
+[node name="PoisonousBarrel" parent="HBoxContainer" instance=ExtResource("3_m655c")]
+layout_mode = 2
+
+[node name="NormalBarrel" parent="HBoxContainer" instance=ExtResource("3_m655c")]
+layout_mode = 2
+accepts_poisonous = false
+
+[node name="WinScreen" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 11.0
+offset_top = 18.0
+offset_right = 395.0
+offset_bottom = 238.0
+color = Color(0.4, 0.623529, 1, 1)
+
+[node name="Label" type="Label" parent="WinScreen"]
+layout_mode = 0
+offset_left = 119.0
+offset_top = 81.0
+offset_right = 274.0
+offset_bottom = 140.0
+theme_override_font_sizes/font_size = 27
+text = "You Won!"
