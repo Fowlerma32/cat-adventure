@@ -1,11 +1,10 @@
-[gd_scene load_steps=18 format=4 uid="uid://byljmo7l7sihi"]
+[gd_scene load_steps=16 format=4 uid="uid://byljmo7l7sihi"]
 
 [ext_resource type="Script" path="res://scripts/main_map.gd" id="1_jh6ab"]
 [ext_resource type="Texture2D" uid="uid://bnltw158v20k2" path="res://assets/Dirt.png" id="1_khlic"]
 [ext_resource type="Texture2D" uid="uid://baphmqggooq2a" path="res://assets/GrassAndWater.png" id="2_q82xr"]
 [ext_resource type="Texture2D" uid="uid://c7fm2kcn164fa" path="res://assets/Bridge.png" id="3_cvsmf"]
 [ext_resource type="PackedScene" uid="uid://c6emmm2mhjrr7" path="res://scenes/player.tscn" id="5_nt8cj"]
-[ext_resource type="Texture2D" uid="uid://dggje6u4upcm" path="res://assets/messenger.png" id="6_sgrfu"]
 [ext_resource type="Texture2D" uid="uid://d3adbvjrofbnj" path="res://assets/Borders.png" id="6_u0jl4"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_1sih3"]
@@ -393,8 +392,6 @@ size = Vector2(71, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5r3df"]
 size = Vector2(77, 20)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_8t1u5"]
-
 [node name="MainMap" type="Node2D"]
 script = ExtResource("1_jh6ab")
 
@@ -406,10 +403,6 @@ tile_set = SubResource("TileSet_yi6u3")
 
 [node name="Player" parent="." instance=ExtResource("5_nt8cj")]
 position = Vector2(1, -4)
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("6_sgrfu")
-offset = Vector2(10, 70)
 
 [node name="Borders" type="TileMapLayer" parent="."]
 position = Vector2(-603, -207)
@@ -429,13 +422,6 @@ position = Vector2(-456, -259)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MainToMountainTransition"]
 position = Vector2(4.5, 0)
 shape = SubResource("RectangleShape2D_5r3df")
-
-[node name="MayortoMessenger" type="StaticBody2D" parent="."]
-position = Vector2(0, -1)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MayortoMessenger"]
-position = Vector2(10, 70)
-shape = SubResource("CircleShape2D_8t1u5")
 
 [connection signal="body_entered" from="MainToForestTransition" to="." method="_on_main_to_forest_transition_body_entered"]
 [connection signal="body_exited" from="MainToForestTransition" to="." method="_on_main_to_forest_transition_body_exited"]
