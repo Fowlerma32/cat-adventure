@@ -1,7 +1,7 @@
-~ this_is_a_node_title
-Messenger: MAYOR! MAYOR! MAYOR! MAYOR! We have an emergency!
+~ start
+Messenger: MAYOR! MAYOR! MAYOR! MAYOR! We have an emergencies
 Mayor Car: Calm down, Messenger. What’s wrong?
-Messenger: It’s an emergency! The polar bears and the penguins are about to fight! We have to do something!
-Mayor: What! We must get there immediately! 
-- Go to the Snowy Mountian 
+Messenger: It’s an emergency!The deers are eating poisonous plants and the polar bears and the penguins are about to fight! We have to do something!
+Mayor: What! We must get there immediately! Let's go to the forest first
+- Go to the forest
 => END
