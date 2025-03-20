@@ -11,6 +11,7 @@ func on_plant_sorted():
 	sorted_plants += 1
 	if sorted_plants >= total_plants:
 		show_win_screen()
+		Global.won_minigame1 = true     #changes the mini game state to won
 		change_scene()
 		
 # Function to change scenes
@@ -22,10 +23,10 @@ func show_win_screen():
 	win_screen.visible = true
 
 var plant_data = [
-	{"name": "Foxglove", "texture": preload("res://assets/NewGame_Button.png"), "poisonous": true},
-	{"name": "Tulip", "texture": preload("res://assets/NewGame_Button.png"), "poisonous": true},
-	{"name": "Fern", "texture": preload("res://assets/NewGame_Button.png"), "poisonous": false},
-	{"name": "Snapdragon", "texture": preload("res://assets/NewGame_Button.png"), "poisonous": false},
+	{"name": "Foxglove", "texture": preload("res://assets/Foxglove.png"), "poisonous": true},
+	{"name": "Tulip", "texture": preload("res://assets/Tulip.png"), "poisonous": true},
+	{"name": "Fern", "texture": preload("res://assets/Fern.png"), "poisonous": false},
+	{"name": "Snapdragon", "texture": preload("res://assets/Snapdragon.png"), "poisonous": false},
 ]
 
 func _ready():

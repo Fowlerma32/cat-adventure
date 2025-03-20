@@ -1,17 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://chabu1wrhnf3b"]
+[gd_scene load_steps=4 format=3 uid="uid://chabu1wrhnf3b"]
 
 [ext_resource type="Texture2D" uid="uid://dggje6u4upcm" path="res://assets/messenger.png" id="1_dwcfi"]
+[ext_resource type="Script" path="res://scripts/npc.gd" id="1_npps4"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bdqvi"]
 radius = 6.08276
 
-[node name="NPC" type="Node2D"]
+[node name="NPC" type="CharacterBody2D" groups=["npc"]]
 position = Vector2(-10, 46)
+script = ExtResource("1_npps4")
+npc_id = "npc_1"
+npc_name = "Messenger"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_dwcfi")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("CircleShape2D_bdqvi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_bdqvi")
