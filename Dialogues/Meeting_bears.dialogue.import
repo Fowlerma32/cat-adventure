@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://b2be6731qo7na"
+path="res://.godot/imported/Meeting_bears.dialogue-eb8e51bcaa636868bc1cb0c9630c85eb.tres"
+
+[deps]
+
+source_file="res://Dialogues/Meeting_bears.dialogue"
+dest_files=["res://.godot/imported/Meeting_bears.dialogue-eb8e51bcaa636868bc1cb0c9630c85eb.tres"]
+
+[params]
+
+defaults=true

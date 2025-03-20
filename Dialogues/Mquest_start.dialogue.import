@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bkt2h1vite703"
+path="res://.godot/imported/Mquest_start.dialogue-f38ff0b9abcbf726cb1502e42e702dd1.tres"
+
+[deps]
+
+source_file="res://Dialogues/Mquest_start.dialogue"
+dest_files=["res://.godot/imported/Mquest_start.dialogue-f38ff0b9abcbf726cb1502e42e702dd1.tres"]
+
+[params]
+
+defaults=true

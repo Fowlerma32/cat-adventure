@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://civmtd8a21nno"
+path="res://.godot/imported/penguin_meet.dialogue-531a6697f04805ea7516d97faf7a3b25.tres"
+
+[deps]
+
+source_file="res://Dialogues/penguin_meet.dialogue"
+dest_files=["res://.godot/imported/penguin_meet.dialogue-531a6697f04805ea7516d97faf7a3b25.tres"]
+
+[params]
+
+defaults=true

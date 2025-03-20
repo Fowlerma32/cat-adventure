@@ -11,7 +11,7 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
-		DialogueManager.show_dialogue_balloon(load("res://Dialouges/Mquest_start.dialogue"),"start")
+		DialogueManager.show_dialogue_balloon(load("res://Dialogues/Mquest_start.dialogue"),"start")
 		return
 	var direction : Vector2 = Vector2.ZERO
 	direction.x = Input.get_action_strength("right") - Input.get_action_strength("left")

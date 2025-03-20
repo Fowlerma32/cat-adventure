@@ -12,10 +12,10 @@ plant_scene = ExtResource("1_oqhmd")
 
 [node name="GridContainer" type="GridContainer" parent="."]
 layout_mode = 0
-offset_left = 129.0
-offset_top = 26.0
-offset_right = 279.0
-offset_bottom = 155.0
+offset_left = 145.0
+offset_top = 30.0
+offset_right = 261.0
+offset_bottom = 161.0
 columns = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]

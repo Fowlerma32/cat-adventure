@@ -19,7 +19,6 @@ config/icon="res://icon.svg"
 
 Global="*res://scripts/Global.gd"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
-MessengerQuest="*res://Dialouges/messenger_quest.gd"
 
 [dialogue_manager]
 
@@ -66,7 +65,7 @@ right={
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Dialouges/After_mquest.dialogue", "res://Dialouges/Granite_info.dialogue", "res://Dialouges/Marble_info.dialogue", "res://Dialouges/Meeting_bears.dialogue", "res://Dialouges/Mquest_start.dialogue", "res://Dialouges/penguin_meet.dialogue", "res://Dialouges/Quartz_info.dialogue", "res://Dialouges/welcome_dialogue.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Dialogues/After_mquest.dialogue", "res://Dialogues/Granite_info.dialogue", "res://Dialogues/Marble_info.dialogue", "res://Dialogues/Meeting_bears.dialogue", "res://Dialogues/Mquest_start.dialogue", "res://Dialogues/penguin_meet.dialogue", "res://Dialogues/Quartz_info.dialogue", "res://Dialogues/welcome_dialogue.dialogue")
 
 [layer_names]
 
