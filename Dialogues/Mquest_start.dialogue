@@ -1,7 +1,7 @@
 ~ start
 if not Global.has_met_messenger
 	set Global.has_met_messenger = true
-	Messenger: MAYOR! MAYOR! MAYOR! MAYOR! We have an emergencies
+	Messenger: MAYOR! MAYOR! MAYOR! MAYOR! We have an emergency!
 	Mayor: Calm down, Messenger. What’s wrong?
 	Messenger: It’s an emergency!The deers are eating poisonous plants and the polar bears and the penguins are about to fight! We have to do something!
 	Mayor: What! We must get there immediately! Let's go to the forest first
