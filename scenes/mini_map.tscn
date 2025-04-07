@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://2p57n01jo2ga"]
+
+[ext_resource type="Script" path="res://scripts/sub_viewport.gd" id="1_xq0yh"]
+[ext_resource type="Texture2D" uid="uid://d1hr3iwi0suuq" path="res://assets/Mayor Design.png" id="2_aymh5"]
+
+[node name="Minimap" type="CanvasLayer"]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -88.0
+offset_top = -85.0
+offset_right = 16.0
+offset_bottom = 15.0
+grow_horizontal = 0
+grow_vertical = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(85, 85)
+render_target_update_mode = 4
+script = ExtResource("1_xq0yh")
+
+[node name="Camera2D" type="Camera2D" parent="SubViewportContainer/SubViewport"]
+zoom = Vector2(0.15, 0.15)
+
+[node name="Line2D" type="Line2D" parent="SubViewportContainer"]
+position = Vector2(8, -3.02941)
+scale = Vector2(1, 1.02941)
+points = PackedVector2Array(-8, 3, -8, 84.5429, 77, 84.5429, 77, 2.94287)
+closed = true
+width = 2.0
+sharp_limit = 1.0
+round_precision = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(356, 195)
+scale = Vector2(0.5625, 0.5625)
+texture = ExtResource("2_aymh5")
+hframes = 3

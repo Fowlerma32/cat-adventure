@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bcna2q7ayjsaw" path="res://assets/CityHall.png" id="7_ck64s"]
 [ext_resource type="Texture2D" uid="uid://c4qs657uvu4ag" path="res://assets/Trees.png" id="7_eycnk"]
 [ext_resource type="PackedScene" uid="uid://chabu1wrhnf3b" path="res://scenes/npc.tscn" id="9_wmap6"]
-[ext_resource type="Script" path="res://scripts/sub_viewport.gd" id="10_s4j8w"]
+[ext_resource type="PackedScene" uid="uid://2p57n01jo2ga" path="res://scenes/mini_map.tscn" id="10_73tc8"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_1sih3"]
 tile_data = PackedInt32Array(0, 65542, 4, 65536, 6, 1610612737, 131072, 589830, 268435458, 196608, 589830, 268435459, 262144, 65542, 4, 1, 6, 4, 65537, 6, 1610612738, 131073, 524294, 268435458, 196609, 524294, 268435459, 262145, 262151, 8, 2, 65542, 4, 65538, 6, 1610612738, 131074, 458758, 3, 196610, 458758, 268435459, 262146, 327687, 8, 3, 262150, 1342177283, 65539, 327686, 1342177283, 131075, 458758, 3, 196611, 393222, 268435459, 262147, 393223, 8, 4, 131078, 4, 65540, 327686, 1342177282, 131076, 393222, 1342177282, 196612, 327686, 268435459, 262148, 458759, 8, 5, 131078, 4, 65541, 196614, 4, 131077, 196614, 4, 196613, 458758, 1342177281, 262149, 524294, 1342177281)
@@ -678,40 +678,7 @@ tile_set = SubResource("TileSet_7bpu7")
 
 [node name="Messenger" parent="." instance=ExtResource("9_wmap6")]
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="SubViewportContainer" type="SubViewportContainer" parent="CanvasLayer"]
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -88.0
-offset_top = -85.0
-offset_right = 16.0
-offset_bottom = 15.0
-grow_horizontal = 0
-grow_vertical = 0
-metadata/_edit_use_anchors_ = true
-
-[node name="SubViewport" type="SubViewport" parent="CanvasLayer/SubViewportContainer"]
-handle_input_locally = false
-size = Vector2i(85, 85)
-render_target_update_mode = 4
-script = ExtResource("10_s4j8w")
-
-[node name="Camera2D" type="Camera2D" parent="CanvasLayer/SubViewportContainer/SubViewport"]
-physics_interpolation_mode = 2
-zoom = Vector2(0.15, 0.15)
-
-[node name="Line2D" type="Line2D" parent="CanvasLayer/SubViewportContainer"]
-position = Vector2(8, -3.02941)
-scale = Vector2(1, 1.02941)
-points = PackedVector2Array(-8, 3, -8, 84.5429, 77, 84.5429, 77, 2.94287)
-closed = true
-width = 2.0
-sharp_limit = 1.0
-round_precision = 4
+[node name="Minimap" parent="." instance=ExtResource("10_73tc8")]
 
 [connection signal="body_entered" from="MainToForestTransition" to="." method="_on_main_to_forest_transition_body_entered"]
 [connection signal="body_exited" from="MainToForestTransition" to="." method="_on_main_to_forest_transition_body_exited"]
