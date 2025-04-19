@@ -1,8 +1,15 @@
 extends Node
 
+@onready var minimap_viewport := $Minimap/SubViewport
+@onready var minimap_display := $Minimap/UI/TextureRect
+@onready var minimap_camera := $Minimap/SubViewport/Camera2D
+
 func _ready():
 	$Player.position = Global.spawn_position  # Set player position
-
+	minimap_viewport.size = Vector2(600,400)
+	minimap_camera.position += Vector2(160, 100)
+	minimap_viewport.world_2d = get_viewport().world_2d
+	minimap_display.texture = minimap_viewport.get_texture()
 
 func _on_forest_to_main_transition_body_entered(body: Node2D) -> void:
 	if body is Player:

@@ -1,45 +1,50 @@
 [gd_scene load_steps=3 format=3 uid="uid://2p57n01jo2ga"]
 
-[ext_resource type="Script" path="res://scripts/sub_viewport.gd" id="1_xq0yh"]
-[ext_resource type="Texture2D" uid="uid://d1hr3iwi0suuq" path="res://assets/Mayor Design.png" id="2_aymh5"]
+[ext_resource type="Script" path="res://scripts/mini_map.gd" id="1_vwpqq"]
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_4875h"]
+viewport_path = NodePath("SubViewport")
 
 [node name="Minimap" type="CanvasLayer"]
+script = ExtResource("1_vwpqq")
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+[node name="SubViewport" type="SubViewport" parent="."]
+disable_3d = true
+transparent_bg = true
+size = Vector2i(1200, 660)
+
+[node name="Camera2D" type="Camera2D" parent="SubViewport"]
+
+[node name="UI" type="Control" parent="."]
+layout_mode = 3
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -88.0
+offset_left = -121.0
 offset_top = -85.0
-offset_right = 16.0
-offset_bottom = 15.0
+offset_right = -3.0
+offset_bottom = -3.0
 grow_horizontal = 0
 grow_vertical = 0
-metadata/_edit_use_anchors_ = true
 
-[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
-handle_input_locally = false
-size = Vector2i(85, 85)
-render_target_update_mode = 4
-script = ExtResource("1_xq0yh")
+[node name="TextureRect" type="TextureRect" parent="UI"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("ViewportTexture_4875h")
+expand_mode = 1
 
-[node name="Camera2D" type="Camera2D" parent="SubViewportContainer/SubViewport"]
-zoom = Vector2(0.15, 0.15)
-
-[node name="Line2D" type="Line2D" parent="SubViewportContainer"]
-position = Vector2(8, -3.02941)
-scale = Vector2(1, 1.02941)
-points = PackedVector2Array(-8, 3, -8, 84.5429, 77, 84.5429, 77, 2.94287)
+[node name="Line2D" type="Line2D" parent="UI"]
+position = Vector2(-249.017, -157.276)
+scale = Vector2(0.944303, 1.00813)
+points = PackedVector2Array(389, 159, 271, 159, 271, 238, 389, 238)
 closed = true
 width = 2.0
-default_color = Color(0.619973, 0.687356, 0.886071, 1)
-sharp_limit = 1.0
-round_precision = 4
-
-[node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer"]
-position = Vector2(44, 40)
-scale = Vector2(0.5625, 0.5625)
-texture = ExtResource("2_aymh5")
-hframes = 3
+default_color = Color(0.67451, 0.815686, 1, 1)
