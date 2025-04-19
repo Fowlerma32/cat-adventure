@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dmjgip7jxalun"
-path="res://.godot/imported/Barrel.png-83a5608bce55707e37bc14e41066b92d.ctex"
+uid="uid://bxhw6a405jrhr"
+path="res://.godot/imported/Titlescreen.png-f952961a15083836b0e66a9b79c1daa1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MinigameAssets/Barrel.png"
-dest_files=["res://.godot/imported/Barrel.png-83a5608bce55707e37bc14e41066b92d.ctex"]
+source_file="res://assets/Titlescreen.png"
+dest_files=["res://.godot/imported/Titlescreen.png-f952961a15083836b0e66a9b79c1daa1.ctex"]
 
 [params]
 

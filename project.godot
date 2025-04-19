@@ -28,9 +28,11 @@ general/wrap_lines=true
 
 window/size/viewport_width=400
 window/size/viewport_height=240
-window/size/window_width_override=1480
+window/size/mode=2
+window/size/window_width_override=1820
 window/size/window_height_override=800
 window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
 
 [editor_plugins]
 

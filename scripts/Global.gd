@@ -3,7 +3,7 @@ extends Node
 var current_scene = "MainMap"
 var transition_scene = false
 
-var spawn_position: Vector2 = Vector2.ZERO
+var spawn_position: Vector2 = Vector2(145, -114)
 
 var player: Node = null #added for quest connection
 

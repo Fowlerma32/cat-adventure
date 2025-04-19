@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://4jm1m6r1hh5q"]
 
 [ext_resource type="Script" path="res://scripts/barrel.gd" id="1_q7xtj"]
-[ext_resource type="Texture2D" uid="uid://dmjgip7jxalun" path="res://assets/MinigameAssets/Barrel.png" id="2_gkswx"]
+[ext_resource type="Texture2D" uid="uid://dr5q7f4g6yic0" path="res://assets/MinigameAssets/PixelBarrel.png" id="2_4hjl0"]
 
 [node name="Barrel" type="Panel"]
 offset_right = 40.0
@@ -27,8 +27,8 @@ offset_bottom = 40.0
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 0
 offset_left = 2.0
-offset_right = 39.0
-offset_bottom = 40.0
-texture = ExtResource("2_gkswx")
+offset_right = 40.0
+offset_bottom = 39.0
+texture = ExtResource("2_4hjl0")
 expand_mode = 1
 stretch_mode = 5
