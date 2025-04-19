@@ -10,12 +10,11 @@ extends SubViewport
 func _ready() -> void:
 	world_2d = get_tree().root.world_2d
 
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	if Global.paused:
 		minimap.visible = false
 	else:
 		minimap.visible = true
-		$Camera2D.position = player.position
+		camera_2d.global_position = player.global_position
 	
