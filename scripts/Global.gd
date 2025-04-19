@@ -1,7 +1,8 @@
 extends Node
 
 var current_scene = "MainMap"
-var transition_scene = false
+var transition_scene: bool = false
+var paused: bool = false
 
 var spawn_position: Vector2 = Vector2(145, -114)
 
