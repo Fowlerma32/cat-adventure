@@ -1,8 +1,8 @@
 extends Node
 
+
 func _ready() -> void:
 	$Player.position = Global.spawn_position  # Set player position
-
 
 func _on_main_to_forest_transition_body_entered(body: Node2D) -> void:
 	if body is Player:

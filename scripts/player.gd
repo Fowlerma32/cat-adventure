@@ -2,12 +2,26 @@ class_name Player extends CharacterBody2D
 
 var movement_speed = 100.0
 
+@onready var PauseMenu = $PauseMenu
+var paused = false
+
 @onready var animated_sprite = $AnimatedSprite2D
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
 	Global.player = self     #added for quest connection
 
+
+func _process(delta: float) -> void:
+	if Input.is_action_just_pressed("pauseMenu"):
+		pauseMenu()
+
+func pauseMenu():
+	if paused:
+		PauseMenu.hide()
+	else:
+		PauseMenu.show()
+	paused = !paused
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("ui_accept"):
