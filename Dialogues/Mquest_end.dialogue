@@ -1,0 +1,5 @@
+~ start
+if Global.won_minigame1 == true
+	set Global.finished_quest_text = true
+	Messenger: Congrats! The deer are very grateful for your help!
+	=> END

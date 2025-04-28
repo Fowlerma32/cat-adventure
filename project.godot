@@ -19,6 +19,8 @@ config/icon="res://icon.svg"
 
 Global="*res://scripts/Global.gd"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+GameManager="*res://scenes/game_manager.tscn"
+Quest="*res://scripts/quest.gd"
 
 [dialogue_manager]
 
@@ -69,10 +71,15 @@ pauseMenu={
 "events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"location":0,"echo":false,"script":null)
 ]
 }
+start_dialogue={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":69,"key_label":0,"unicode":101,"location":0,"echo":false,"script":null)
+]
+}
 
 [internationalization]
 
-locale/translations_pot_files=PackedStringArray("res://Dialogues/After_mquest.dialogue", "res://Dialogues/Granite_info.dialogue", "res://Dialogues/Marble_info.dialogue", "res://Dialogues/Meeting_bears.dialogue", "res://Dialogues/Mquest_start.dialogue", "res://Dialogues/penguin_meet.dialogue", "res://Dialogues/Quartz_info.dialogue", "res://Dialogues/welcome_dialogue.dialogue")
+locale/translations_pot_files=PackedStringArray("res://Dialogues/After_mquest.dialogue", "res://Dialogues/Granite_info.dialogue", "res://Dialogues/Marble_info.dialogue", "res://Dialogues/Meeting_bears.dialogue", "res://Dialogues/Mquest_start.dialogue", "res://Dialogues/penguin_meet.dialogue", "res://Dialogues/Quartz_info.dialogue", "res://Dialogues/welcome_dialogue.dialogue", "res://Dialogues/Mquest_end.dialogue")
 
 [layer_names]
 

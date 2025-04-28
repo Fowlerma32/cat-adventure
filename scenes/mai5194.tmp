@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://byljmo7l7sihi"]
+[gd_scene load_steps=32 format=4 uid="uid://byljmo7l7sihi"]
 
 [ext_resource type="Script" path="res://scripts/main_map.gd" id="1_jh6ab"]
 [ext_resource type="Texture2D" uid="uid://bnltw158v20k2" path="res://assets/Dirt.png" id="1_khlic"]
@@ -9,9 +9,11 @@
 [ext_resource type="Texture2D" uid="uid://d3adbvjrofbnj" path="res://assets/Borders.png" id="6_u0jl4"]
 [ext_resource type="Texture2D" uid="uid://bcna2q7ayjsaw" path="res://assets/CityHall.png" id="7_ck64s"]
 [ext_resource type="Texture2D" uid="uid://c4qs657uvu4ag" path="res://assets/Trees.png" id="7_eycnk"]
+[ext_resource type="PackedScene" uid="uid://chabu1wrhnf3b" path="res://scenes/npc.tscn" id="9_wmap6"]
 [ext_resource type="PackedScene" uid="uid://2p57n01jo2ga" path="res://scenes/mini_map.tscn" id="10_73tc8"]
-[ext_resource type="Script" path="res://scripts/messenger.gd" id="11_eiowp"]
+[ext_resource type="Script" path="res://scripts/messenger_layer.gd" id="11_eiowp"]
 [ext_resource type="Texture2D" uid="uid://dggje6u4upcm" path="res://assets/messenger.png" id="13_46lhv"]
+[ext_resource type="Script" path="res://scripts/quest.gd" id="15_d18ua"]
 [ext_resource type="Script" path="res://scripts/messenger_2d_cast.gd" id="15_p5ilr"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_1sih3"]
@@ -724,8 +726,7 @@ sources/0 = SubResource("TileSetAtlasSource_ddyqi")
 [sub_resource type="CircleShape2D" id="CircleShape2D_flhe6"]
 radius = 22.0
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1kbh5"]
-size = Vector2(16, 15)
+[sub_resource type="CircleShape2D" id="CircleShape2D_u3b7g"]
 
 [node name="MainMap" type="Node2D"]
 script = ExtResource("1_jh6ab")
@@ -769,28 +770,34 @@ tile_set = SubResource("TileSet_7bpu7")
 
 [node name="Minimap" parent="." instance=ExtResource("10_73tc8")]
 
-[node name="Messenger" type="Area2D" parent="."]
+[node name="Messenger_Layer" type="Area2D" parent="."]
 script = ExtResource("11_eiowp")
 
-[node name="Messenger" type="Sprite2D" parent="Messenger"]
+[node name="Messenger_old" parent="Messenger_Layer" instance=ExtResource("9_wmap6")]
+visible = false
+position = Vector2(92, -115)
+
+[node name="Messenger" type="Sprite2D" parent="Messenger_Layer"]
 position = Vector2(92, -115)
 texture = ExtResource("13_46lhv")
 
-[node name="ShapeCast2D" type="ShapeCast2D" parent="Messenger"]
-position = Vector2(92, -115)
+[node name="ShapeCast2D" type="ShapeCast2D" parent="Messenger_Layer/Messenger"]
 shape = SubResource("CircleShape2D_flhe6")
 target_position = Vector2(0, 0)
 script = ExtResource("15_p5ilr")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Messenger"]
-visible = false
-position = Vector2(93, -115)
-shape = SubResource("RectangleShape2D_1kbh5")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Messenger_Layer"]
+position = Vector2(92, -115)
+shape = SubResource("CircleShape2D_u3b7g")
 
-[node name="SortQuest" type="Node2D" parent="Messenger"]
+[node name="SortQuest" type="Node2D" parent="Messenger_Layer"]
+script = ExtResource("15_d18ua")
+quest_name = "Sorting Quest"
+quest_description = "Go to the forest and sort the flowers!"
+reached_goal_text = "Congrats! Return to the Messenger!"
 
 [connection signal="body_entered" from="MainToForestTransition" to="." method="_on_main_to_forest_transition_body_entered"]
 [connection signal="body_exited" from="MainToForestTransition" to="." method="_on_main_to_forest_transition_body_exited"]
 [connection signal="body_entered" from="MainToMountainTransition" to="." method="_on_main_to_mountain_transition_body_entered"]
 [connection signal="body_exited" from="MainToMountainTransition" to="." method="_on_main_to_mountain_transition_body_exited"]
-[connection signal="body_entered" from="Messenger" to="Messenger" method="_on_body_entered"]
+[connection signal="body_entered" from="Messenger_Layer" to="Messenger_Layer" method="_on_body_entered"]

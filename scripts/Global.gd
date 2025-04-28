@@ -6,10 +6,9 @@ var paused: bool = false
 
 var spawn_position: Vector2 = Vector2(145, -114)
 
-var player: Node = null #added for quest connection
-
 #Bool var that dictates whether the player has spoken too the messenger
 var has_met_messenger: bool = false
+var finished_quest_text: bool = false
 
 #Bool var that dicates whether the player finished the minigame
 #ensures that the player cant play the minigame multiple times

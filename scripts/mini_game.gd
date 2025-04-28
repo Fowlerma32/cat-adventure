@@ -12,6 +12,7 @@ func on_plant_sorted():
 	if sorted_plants >= total_plants:
 		show_win_screen()
 		Global.won_minigame1 = true     #changes the mini game state to won
+		Quest.reached_goal()
 		change_scene()
 		
 # Function to change scenes
