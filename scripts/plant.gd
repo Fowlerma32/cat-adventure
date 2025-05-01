@@ -1,3 +1,5 @@
+#This script handles the plant variables for the minigame and
+#functions which allow the player to move the plants
 extends VBoxContainer
 
 @export var plant_name: String = "Plant Name"
@@ -7,7 +9,7 @@ extends VBoxContainer
 @onready var texture_rect = $TextureRect
 @onready var label = $Label
 
-
+# Called when the node enters the scene tree for the first time.
 func _ready():
 	texture_rect.texture = plant_texture
 	label.text = plant_name
