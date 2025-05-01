@@ -1,5 +1,5 @@
 # Mayor Cat Adventure
-This is a game where you play as a cat mayor of the town, helping the local villagers with tasks. As mayor your goal is to make the town a welcoming and safe place. The town is a place of diversity with multiple different animal species and your job is to help them adjust to the town! Throughout the game you will travel between different maps, interact with npcs, play educational minigames, and complete quests.
+Mayor Cat Adventure is a game where you play as a cat mayor of the town, helping the local villagers with tasks. As mayor your goal is to make the town a welcoming and safe place fit for more citizens. The town is a place of diversity with multiple different animal species. Your job is to help them adjust to the town! Throughout the game you will travel between different maps, interact with town citizens, play educational minigames, and complete quests.
 
 - **Contacts**:  
   - Melissa Fowler: maf22@hood.edu  
@@ -9,17 +9,17 @@ This is a game where you play as a cat mayor of the town, helping the local vill
 **Tech Stack:**
   - Game Engine: Godot v4.3
   - Programming Language: GDScript
-  - Art: LibreSprite
-  - Music: Soundtrap
+  - Art: LibreSprite v1.2
+  - Music: Soundtrap v4.0
 
 **Folder Structure:**
-`/assets` Contains all art for the game
-`/scenes` Contains all Godot scenes which include the visual aspects of the game and game elements
-`/scripts` Contains the scripts necessary to combine and handle elements of the game
-`/addons` Contains the Dialogue Manager addon created by Nathan Hoad. Used for NPC dialogues in the game
-`/Dialogues` Contains the dialogue for NPCs and quests
-`/Fonts` Contains fonts used in the UI
-`/README.md` The current read me file
+- `/assets` Contains all art for the game
+- `/scenes` Contains all Godot scenes which include the visual aspects of the game and game elements
+- `/scripts` Contains the scripts necessary to combine and handle elements of the game
+- `/addons` Contains the Dialogue Manager addon created by Nathan Hoad. Used for NPC dialogues in the game
+- `/Dialogues` Contains the dialogue for NPCs and quests
+- `/Fonts` Contains fonts used in the UI
+- `/README.md` The current read me file
 
 **Features:**
   - Explore different maps
@@ -28,7 +28,7 @@ This is a game where you play as a cat mayor of the town, helping the local vill
   - Play educational minigames
     
 **How to download:**
-  - Download Godot
+  - Download Godot v4.3
   - Clone the GitHub
   - Import the project into Godot
   - Run the game
