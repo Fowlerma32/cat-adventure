@@ -8,7 +8,7 @@ var paused: bool = false #keeps track of whether the game is paused or not
 
 var spawn_position: Vector2 = Vector2(145, -114) #handles where the player spawns
 
-#Bool var that dictates whether the player has spoken too the messenger
+#Bool var that dictates whether the player has spoken to the messenger
 var has_met_messenger: bool = false 
 var finished_quest_text: bool = false
 

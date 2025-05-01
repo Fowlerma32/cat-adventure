@@ -1,14 +1,32 @@
-[gd_scene load_steps=4 format=3 uid="uid://chabu1wrhnf3b"]
+[gd_scene load_steps=4 format=3 uid="uid://dko1ui5xpjta0"]
 
 [ext_resource type="Texture2D" uid="uid://dggje6u4upcm" path="res://assets/messenger.png" id="1_dwcfi"]
-[ext_resource type="Script" path="res://scripts/messenger.gd" id="1_npps4"]
+
+[sub_resource type="GDScript" id="GDScript_jn7lk"]
+script/source = "extends Area2D
+
+#@export var quest: SortQuest
+
+#This script is currently doing nothing.
+
+#func _on_body_entered(body: Node2D) -> void:
+	#Check for player
+	#if body.is_in_group(\"Player\"):
+		#if body is Player:
+			#if Quest.quest_status == Quest.QuestStatus.available:
+				#Quest.start_quest()
+			
+			#if Quest.quest_status == Quest.QuestStatus.reached_goal:
+				#Quest.finish_quest()
+"
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bdqvi"]
 radius = 6.08276
 
 [node name="NPC" type="CharacterBody2D" groups=["npc"]]
+visible = false
 position = Vector2(-10, 46)
-script = ExtResource("1_npps4")
+script = SubResource("GDScript_jn7lk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_dwcfi")
