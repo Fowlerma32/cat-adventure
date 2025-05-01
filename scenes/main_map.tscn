@@ -17,7 +17,7 @@
 [sub_resource type="TileMapPattern" id="TileMapPattern_1sih3"]
 tile_data = PackedInt32Array(0, 65542, 4, 65536, 6, 1610612737, 131072, 589830, 268435458, 196608, 589830, 268435459, 262144, 65542, 4, 1, 6, 4, 65537, 6, 1610612738, 131073, 524294, 268435458, 196609, 524294, 268435459, 262145, 262151, 8, 2, 65542, 4, 65538, 6, 1610612738, 131074, 458758, 3, 196610, 458758, 268435459, 262146, 327687, 8, 3, 262150, 1342177283, 65539, 327686, 1342177283, 131075, 458758, 3, 196611, 393222, 268435459, 262147, 393223, 8, 4, 131078, 4, 65540, 327686, 1342177282, 131076, 393222, 1342177282, 196612, 327686, 268435459, 262148, 458759, 8, 5, 131078, 4, 65541, 196614, 4, 131077, 196614, 4, 196613, 458758, 1342177281, 262149, 524294, 1342177281)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eff5f"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7lam4"]
 texture = ExtResource("3_vy4wq")
 3:0/0 = 0
 4:0/0 = 0
@@ -86,7 +86,7 @@ texture = ExtResource("3_vy4wq")
 6:7/0 = 0
 7:7/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ka04n"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_48w0r"]
 texture = ExtResource("1_khlic")
 0:0/0 = 0
 1:0/0 = 0
@@ -176,7 +176,7 @@ texture = ExtResource("1_khlic")
 8:9/0 = 0
 9:9/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_illgg"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yxgcm"]
 texture = ExtResource("2_q82xr")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -8, 8, -3.625, 8, -3.5, -8)
@@ -290,7 +290,7 @@ texture = ExtResource("2_q82xr")
 9:9/0 = 0
 9:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -3.25, -8, -3.25, 8, -8, 8)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tp8et"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lf4du"]
 texture = ExtResource("3_cvsmf")
 4:0/0 = 0
 4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(2.375, 8, 2.375, -8, 8, -8, 8, 8)
@@ -411,13 +411,13 @@ texture = ExtResource("3_cvsmf")
 
 [sub_resource type="TileSet" id="TileSet_yi6u3"]
 physics_layer_0/collision_layer = 1
-sources/7 = SubResource("TileSetAtlasSource_tp8et")
-sources/6 = SubResource("TileSetAtlasSource_illgg")
-sources/5 = SubResource("TileSetAtlasSource_ka04n")
-sources/2 = SubResource("TileSetAtlasSource_eff5f")
+sources/7 = SubResource("TileSetAtlasSource_lf4du")
+sources/6 = SubResource("TileSetAtlasSource_yxgcm")
+sources/5 = SubResource("TileSetAtlasSource_48w0r")
+sources/2 = SubResource("TileSetAtlasSource_7lam4")
 pattern_0 = SubResource("TileMapPattern_1sih3")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7g0rk"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qgnam"]
 texture = ExtResource("6_u0jl4")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 8, -8, -8, 8, -8, 8, -2.625, 0, -2, 0, 4.375, -1.25, 8)
@@ -473,7 +473,7 @@ texture = ExtResource("6_u0jl4")
 
 [sub_resource type="TileSet" id="TileSet_mudqj"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_7g0rk")
+sources/0 = SubResource("TileSetAtlasSource_qgnam")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xe1ca"]
 size = Vector2(71, 20)
@@ -481,7 +481,7 @@ size = Vector2(71, 20)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5r3df"]
 size = Vector2(77, 20)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_emtng"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nlukd"]
 texture = ExtResource("7_eycnk")
 7:0/0 = 0
 7:0/0/z_index = 7
@@ -592,9 +592,9 @@ texture = ExtResource("7_eycnk")
 
 [sub_resource type="TileSet" id="TileSet_dn7qf"]
 physics_layer_0/collision_layer = 1
-sources/1 = SubResource("TileSetAtlasSource_emtng")
+sources/1 = SubResource("TileSetAtlasSource_nlukd")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ddyqi"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v2qns"]
 texture = ExtResource("7_ck64s")
 0:0/0 = 0
 0:0/0/z_index = 6
@@ -719,7 +719,7 @@ texture = ExtResource("7_ck64s")
 
 [sub_resource type="TileSet" id="TileSet_7bpu7"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_ddyqi")
+sources/0 = SubResource("TileSetAtlasSource_v2qns")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_flhe6"]
 radius = 22.0
@@ -773,6 +773,7 @@ tile_set = SubResource("TileSet_7bpu7")
 script = ExtResource("11_eiowp")
 
 [node name="Messenger" type="Sprite2D" parent="Messenger"]
+z_index = 25
 position = Vector2(92, -115)
 texture = ExtResource("13_46lhv")
 
@@ -788,6 +789,8 @@ position = Vector2(93, -115)
 shape = SubResource("RectangleShape2D_1kbh5")
 
 [node name="SortQuest" type="Node2D" parent="Messenger"]
+
+[node name="MiniMapLayers" type="Node2D" parent="."]
 
 [connection signal="body_entered" from="MainToForestTransition" to="." method="_on_main_to_forest_transition_body_entered"]
 [connection signal="body_exited" from="MainToForestTransition" to="." method="_on_main_to_forest_transition_body_exited"]

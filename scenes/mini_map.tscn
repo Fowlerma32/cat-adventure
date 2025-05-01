@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://2p57n01jo2ga"]
+[gd_scene load_steps=5 format=3 uid="uid://2p57n01jo2ga"]
 
 [ext_resource type="Script" path="res://scripts/mini_map.gd" id="1_vwpqq"]
+[ext_resource type="Texture2D" uid="uid://dggje6u4upcm" path="res://assets/messenger.png" id="2_idv42"]
+[ext_resource type="Texture2D" uid="uid://dlcvwyn0b3lpi" path="res://assets/Exclamation.png" id="3_fpk4w"]
 
 [sub_resource type="ViewportTexture" id="ViewportTexture_4875h"]
 viewport_path = NodePath("SubViewport")
@@ -14,6 +16,30 @@ transparent_bg = true
 size = Vector2i(1200, 660)
 
 [node name="Camera2D" type="Camera2D" parent="SubViewport"]
+
+[node name="PlayerMarker" type="ColorRect" parent="SubViewport"]
+z_index = 20
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(1, 0.447059, 1, 1)
+
+[node name="Messenger" type="Sprite2D" parent="SubViewport"]
+z_index = 19
+position = Vector2(303, 172)
+scale = Vector2(2, 2)
+texture = ExtResource("2_idv42")
+
+[node name="MainExclamation" type="Sprite2D" parent="SubViewport"]
+z_index = 20
+position = Vector2(329, 181)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_fpk4w")
+
+[node name="ForestExclamation" type="Sprite2D" parent="SubViewport"]
+z_index = 20
+position = Vector2(329, 181)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_fpk4w")
 
 [node name="UI" type="Control" parent="."]
 layout_mode = 3

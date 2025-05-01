@@ -1,3 +1,4 @@
+#This script handles the first mini game.
 extends Control
 
 @export var plant_scene: PackedScene
@@ -17,7 +18,7 @@ func on_plant_sorted():
 		
 # Function to change scenes
 func change_scene():
-	await get_tree().create_timer(1).timeout  # Optional: Small delay before switching
+	await get_tree().create_timer(1).timeout  # Small delay before switching
 	get_tree().change_scene_to_file("res://scenes/forest_map.tscn")  # Change to the next scene
 
 func show_win_screen():
@@ -30,10 +31,12 @@ var plant_data = [
 	{"name": "Snapdragon", "texture": preload("res://assets/Snapdragon.png"), "poisonous": false},
 ]
 
+#sets up the actual game by placing plant data into a grid 
 func _ready():
 	var grid = $GridContainer
 	for data in plant_data:
-		var plant = plant_scene.instantiate()
+		#instantiates the plant scene, which includes a script which allows the player to move the plants
+		var plant = plant_scene.instantiate() 
 		plant.plant_name = data["name"]
 		plant.plant_texture = data["texture"]
 		plant.is_poisonous = data["poisonous"]
