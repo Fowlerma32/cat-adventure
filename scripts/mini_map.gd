@@ -4,6 +4,7 @@ extends CanvasLayer
 @onready var messenger = $SubViewport/Messenger
 @onready var main_exclamation = $SubViewport/MainExclamation
 @onready var forest_exclamation = $SubViewport/ForestExclamation
+@onready var mountain_exclamation = $SubViewport/MountainExclamation
 @onready var player = get_node("../Player")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -15,6 +16,7 @@ func _process(_delta: float) -> void:
 	if Global.current_scene == "MainMap":
 		messenger.visible = true
 		forest_exclamation.visible = false
+		mountain_exclamation.visible = false
 		if !Global.has_met_messenger || Global.won_minigame1:
 			main_exclamation.position = messenger.position
 		elif !Global.won_minigame1:
@@ -22,12 +24,19 @@ func _process(_delta: float) -> void:
 	elif Global.current_scene == "Forest":
 		messenger.visible = false
 		main_exclamation.visible = false
+		mountain_exclamation.visible = false
 		if !Global.won_minigame1 && Global.has_met_messenger:
 			forest_exclamation.visible = true
 			forest_exclamation.position = Vector2(55,3)
 		elif Global.won_minigame1:
 			forest_exclamation.visible = true
 			forest_exclamation.position = Vector2(165,-57)
+	elif Global.current_scene == "Mountain":
+		messenger.visible = false
+		mountain_exclamation.visible = true
+		mountain_exclamation.position = Vector2(161,259)
+		main_exclamation.visible = false
+		forest_exclamation.visible = false
 		
 
 func _ready() -> void:
