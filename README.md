@@ -6,24 +6,30 @@ This is a game where you play as a cat mayor of the town, helping the local vill
   - Ghazal Hami: gh8@hood.edu  
   - Kayla Meistrell: km38@hood.edu
   
-- **Tech Stack**
+**Tech Stack:**
   - Game Engine: Godot v4.3
   - Programming Language: GDScript
   - Art: LibreSprite
   - Music: Soundtrap
 
-- **Features**
+**Folder Structure:**
+`/assets` Contains all art for the game
+`/scenes` Contains all Godot scenes which include the visual aspects of the game and game elements
+`/scripts` Contains the scripts necessary to combine and handle elements of the game
+`/Dialogues` Contains the dialogue for NPCs and questlines 
+
+**Features:**
   - Explore different maps
   - Talk with NPCs
   - Obtain and complete quests
   - Play educational minigames
-
-- **How to download**
+    
+**How to download:**
   - Download Godot
   - Clone the GitHub
   - Import the project into Godot 
 
-- **How to Play**
+**How to Play:**
   - Use WASD or the arrow keys to move
   - Press E to interact with NPCs
   - Press ESC to open the pause menu
