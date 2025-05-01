@@ -16,7 +16,10 @@ This is a game where you play as a cat mayor of the town, helping the local vill
 `/assets` Contains all art for the game
 `/scenes` Contains all Godot scenes which include the visual aspects of the game and game elements
 `/scripts` Contains the scripts necessary to combine and handle elements of the game
-`/Dialogues` Contains the dialogue for NPCs and questlines 
+`/addons` Contains the Dialogue Manager addon created by Nathan Hoad. Used for NPC dialogues in the game
+`/Dialogues` Contains the dialogue for NPCs and quests
+`/Fonts` Contains fonts used in the UI
+`/README.md` The current read me file
 
 **Features:**
   - Explore different maps
@@ -27,7 +30,8 @@ This is a game where you play as a cat mayor of the town, helping the local vill
 **How to download:**
   - Download Godot
   - Clone the GitHub
-  - Import the project into Godot 
+  - Import the project into Godot
+  - Run the game
 
 **How to Play:**
   - Use WASD or the arrow keys to move
