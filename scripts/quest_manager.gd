@@ -1,3 +1,4 @@
+#This script holds important variables for the quests in the game
 class_name QuestManager extends Node2D
 
 #Elements that show on screen for quests

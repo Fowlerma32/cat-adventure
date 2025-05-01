@@ -4,7 +4,7 @@ extends ShapeCast2D
 func _ready() -> void:
 	pass # Replace with function body.
 
-#Called every frame. 'delta' is the elapsed time since the previous frame.
+#Called every frame when the player enters the messenger's ShapeCast
 func _process(delta):
 	if is_colliding():
 		for i in range(get_collision_count()):

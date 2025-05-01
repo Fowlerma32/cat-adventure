@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=4 uid="uid://byljmo7l7sihi"]
+[gd_scene load_steps=29 format=4 uid="uid://byljmo7l7sihi"]
 
 [ext_resource type="Script" path="res://scripts/main_map.gd" id="1_jh6ab"]
 [ext_resource type="Texture2D" uid="uid://bnltw158v20k2" path="res://assets/Dirt.png" id="1_khlic"]
@@ -10,7 +10,6 @@
 [ext_resource type="Texture2D" uid="uid://bcna2q7ayjsaw" path="res://assets/CityHall.png" id="7_ck64s"]
 [ext_resource type="Texture2D" uid="uid://c4qs657uvu4ag" path="res://assets/Trees.png" id="7_eycnk"]
 [ext_resource type="PackedScene" uid="uid://2p57n01jo2ga" path="res://scenes/mini_map.tscn" id="10_73tc8"]
-[ext_resource type="Script" path="res://scripts/messenger.gd" id="11_eiowp"]
 [ext_resource type="Texture2D" uid="uid://dggje6u4upcm" path="res://assets/messenger.png" id="13_46lhv"]
 [ext_resource type="Script" path="res://scripts/messenger_2d_cast.gd" id="15_p5ilr"]
 
@@ -770,7 +769,6 @@ tile_set = SubResource("TileSet_7bpu7")
 [node name="Minimap" parent="." instance=ExtResource("10_73tc8")]
 
 [node name="Messenger" type="Area2D" parent="."]
-script = ExtResource("11_eiowp")
 
 [node name="Messenger" type="Sprite2D" parent="Messenger"]
 z_index = 25
