@@ -30,4 +30,5 @@ func update():
 		var tilemap_layer = main_map.get_node("ForestReward")
 		tilemap_layer.visible = true
 		main_map.get_node("Minimap").update_minimap()
+		main_map.get_node("RewardNPCs1").visible = true
 	
