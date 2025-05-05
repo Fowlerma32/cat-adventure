@@ -16,7 +16,6 @@ func _ready() -> void:
 func _process(_delta: float) -> void:
 	if Input.is_action_just_pressed("pauseMenu"): #pause the game when 'ESC' is pressed
 		pauseMenu()
-		
 #function for opening the pause menu
 func pauseMenu():
 	if Global.paused: #if paused and the user hits continue

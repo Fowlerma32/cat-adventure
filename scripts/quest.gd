@@ -32,5 +32,7 @@ func finish_quest() -> void:
 		#update quest status to finished
 		quest_status = QuestManager.QuestStatus.finished
 		print("Finished Quest!")
+		Global.update()
 		#hides the QuestBox UI
 		QuestBox.visible = false
+		
