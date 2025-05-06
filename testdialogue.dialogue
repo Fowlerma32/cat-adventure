@@ -1,0 +1,23 @@
+~ start
+Cat Mayor: Here's a question about diorite.
+Which famous code was inscribed on diorite?
+
+- The Code of Hammurabi
+	  => END
+- The Ten Commandments
+	=> start 
+	Cat Mayor: Incorrect! Try again.
+- The Rosetta Stone
+	Cat Mayor: Wrong! The Rosetta Stone was granite.
+	=> start
+	Cat Mayor: Incorrect! Try again.
+
+- The Code of Hammurabi
+    Cat Mayor: Correct! This was written on a diorite stele.
+    => END
+-  The Ten Commandments
+    Cat Mayor: Incorrect! Try again.
+    => start
+- The Rosetta Stone
+    Cat Mayor: Wrong! The Rosetta Stone was granite.
+    => start

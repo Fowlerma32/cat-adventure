@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bcet3dxu8ogp2"
+path="res://.godot/imported/RoseQuartz_info.dialogue-726e1c74108db15c59cd7b5002a716ff.tres"
+
+[deps]
+
+source_file="res://Dialogues/RoseQuartz_info.dialogue"
+dest_files=["res://.godot/imported/RoseQuartz_info.dialogue-726e1c74108db15c59cd7b5002a716ff.tres"]
+
+[params]
+
+defaults=true

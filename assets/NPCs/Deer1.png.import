@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcna2q7ayjsaw"
-path="res://.godot/imported/CityHall.png-4c745c2b833a7dfa257261a54a37dd9c.ctex"
+uid="uid://c60q7dkl4k12n"
+path="res://.godot/imported/Deer1.png-0b2879ff86b8b966dec3bf529e2080bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/CityHall.png"
-dest_files=["res://.godot/imported/CityHall.png-4c745c2b833a7dfa257261a54a37dd9c.ctex"]
+source_file="res://assets/NPCs/Deer1.png"
+dest_files=["res://.godot/imported/Deer1.png-0b2879ff86b8b966dec3bf529e2080bb.ctex"]
 
 [params]
 
@@ -21,7 +21,7 @@ compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""

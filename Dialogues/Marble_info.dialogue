@@ -5,4 +5,17 @@ Cat Mayor: Marble has been involved in many countries’ history and culture suc
 Cat Mayor: A famous building with marble is the Taj Mahal! 
 Cat Mayor: This is not the rock we are looking for!
 - Try Again 
+
+Cat Mayor: Answer the question in order to advance. 
+Which of the following creates marble?
+
+- Limestone
+	  => END
+- Obsidian 
+	=> Marble_info 
+	Cat Mayor: Incorrect! Try again.
+- Stone and fire
+	Cat Mayor: Wrong! This makes no sense
+	=> Marble_info
+	Cat Mayor: Incorrect! Try again.
 => END

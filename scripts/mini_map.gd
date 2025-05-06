@@ -21,6 +21,8 @@ func _process(_delta: float) -> void:
 			main_exclamation.position = messenger.position
 		elif !Global.won_minigame1:
 			main_exclamation.position = Vector2(-400,248)
+		else:
+			main_exclamation.visible = false
 	elif Global.current_scene == "Forest":
 		messenger.visible = false
 		main_exclamation.visible = false
@@ -47,7 +49,7 @@ func copy_tilemaps_to_minimap(map_root: Node):
 	for child in map_root.get_children():
 		if child is TileMapLayer:
 			var copy = child.duplicate()  # Deep copy
-			copy.visible = true  # Ensure it's visible in the viewport
+			#copy.visible = true  # Ensure it's visible in the viewport
 			# Add to the SubViewport for minimap rendering
 			$SubViewport.add_child(copy)
 
@@ -62,3 +64,4 @@ func clear_minimap():
 func update_minimap():
 	clear_minimap()  # Clear previous TileMaps
 	copy_tilemaps_to_minimap($"..")  # Copy new ones
+	
