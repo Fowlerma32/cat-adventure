@@ -8,5 +8,5 @@ func _process(delta):
 				BearQuest.start_quest()
 				DialogueManager.show_dialogue_balloon(load("res://Dialogues/penguin_meet.dialogue"), "Meeting_Penguins")
 			#else:
-				#DialogueManager.show_dialogue_balloon(load("res://Dialogues/After_mquest.dialogue"), "start")
+				#DialogueManager.show_dialogue_balloon(load("res://Dialogues/After_mquest.dialogue"), "After_mquest")
 				#BearQuest.finish_quest()

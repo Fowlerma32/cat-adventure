@@ -2,6 +2,16 @@
 Cat Mayor: Evidence of its use dating back to Paleolithic civilizations
 Cat Mayor: Quartz comes in various forms, including clear rock crystal, amethyst, rose quartz, and smoky quartz, each with distinct colors and properties.
 Cat Mayor: Quartz is one of the most abundant minerals in the Earth's crust and is composed of silicon and oxygen atoms in a continuous framework of SiO4 silicon-oxygen tetrahedra. 
-Cat Mayor: This is not the rock we are looking for!
-- Try Again 
+
+Cat Mayor: Answer the question in order to advance. 
+To which civilization does Quartz date back to?
+- Paleolithic civilizations
+	  => END
+- Mughal Empire 
+	=> Quartz_info 
+	Cat Mayor: Incorrect! Try again.
+- 2003
+	Cat Mayor: Wrong! This is quite recent.
+	=> Quartz_info
+	
 => END

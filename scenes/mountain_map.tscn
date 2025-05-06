@@ -224,7 +224,7 @@ sources/3 = SubResource("TileSetAtlasSource_l8ww0")
 radius = 2.82843
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xm638"]
-radius = 13.0
+radius = 8.24621
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_x7uwj"]
 radius = 7.07107
@@ -337,7 +337,7 @@ position = Vector2(-35, 74)
 texture = ExtResource("13_ddh78")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DioriteArea"]
-position = Vector2(-28, 77)
+position = Vector2(-36, 77)
 shape = SubResource("CircleShape2D_xm638")
 one_way_collision_margin = 0.0
 
