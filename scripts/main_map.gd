@@ -9,7 +9,7 @@ extends Node
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	Global.main_map = self  # store reference to the main map
+	GameManager.main_map = self  # store reference to the main map
 	$Player.position = Global.spawn_position  # Set player position	
 	minimap.update_minimap()  # Update minimap with new map's TileMaps
 	minimap_viewport.world_2d = World2D.new() #makes the viewport its own world
