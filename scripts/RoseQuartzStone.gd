@@ -8,6 +8,7 @@ func _ready():
 	
 func _update_collectible():
 	can_collect = SearchQuest.stones_visited.size() >=4
+	Global.finished_second_minigame = true
 	
 func _on_body_entered(body: Node2D) -> void:
 	if body is Player and can_collect:

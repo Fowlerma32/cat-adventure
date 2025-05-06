@@ -26,7 +26,7 @@ Mayor Cat Adventure is a game where you play as a cat mayor of the town, helping
   - Talk with NPCs
   - Obtain and complete quests
   - Play educational minigames
-    
+	
 **How to download:**
   - Download Godot v4.3
   - Clone the GitHub

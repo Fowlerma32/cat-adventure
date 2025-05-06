@@ -7,7 +7,7 @@ Cat Mayor: Answer the question in order to advance.
 Which famous code was inscribed on diorite?
 
 - The Code of Hammurabi
-	  => END
+	=> END
 - The Ten Commandments
 	=> Diorite_info 
 	Cat Mayor: Incorrect! Try again.
