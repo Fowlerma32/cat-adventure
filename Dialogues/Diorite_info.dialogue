@@ -1,0 +1,18 @@
+~ Diorite_info
+Cat Mayor: It is formed when magma is trapped beneath the Earth’s surface and slowly cools, crystallizing into a mixture of minerals.
+Cat Mayor: The colors and texture of diorite are influenced by sodium-calcium plagioclase, biotite, hornblende, and sometimes quartz
+Cat Mayor: The  Code of Hammurabi is inscribed on a 2-meter black diorite pillar, now located in the Musée de Louvre in Paris.
+=== CHOICE
+* Quiz: Which famous ancient legal code was recorded on a 2-meter black diorite pillar?
+    * The Code of Hammurabi (Correct)
+        cat_mayor: Correct! Remember this rock's properties.
+        cat_mayor: This isn't our target rock, but keep it as reference.
+        cat_mayor: Look for the rose-colored quartz to complete your quest!
+        => END
+    * The Ten Commandments 
+        cat_mayor: Incorrect! Check the facts again.
+        => Diorite_info
+    * The Rosetta Stone
+        cat_mayor: Not quite! Try again.
+        => Diorite_info
+=> END

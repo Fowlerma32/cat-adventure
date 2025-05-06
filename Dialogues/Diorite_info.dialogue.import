@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://bc86743u0cxgu"
+path="res://.godot/imported/Diorite_info.dialogue-38ff74c72ee82feb1cbe32311baa36ce.tres"
+
+[deps]
+
+source_file="res://Dialogues/Diorite_info.dialogue"
+dest_files=["res://.godot/imported/Diorite_info.dialogue-38ff74c72ee82feb1cbe32311baa36ce.tres"]
+
+[params]
+
+defaults=true
