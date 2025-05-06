@@ -17,6 +17,8 @@ var finished_quest_text: bool = false
 var won_minigame1: bool = false
 
 var finished_second_minigame = false
+#Indicates whether the first quest has been finished
+var finished_quest1: bool = false
 
 #function to finish changing maps.
 func finish_change_scene():

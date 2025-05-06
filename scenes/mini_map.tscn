@@ -36,6 +36,7 @@ scale = Vector2(1.5, 1.5)
 texture = ExtResource("3_fpk4w")
 
 [node name="ForestExclamation" type="Sprite2D" parent="SubViewport"]
+visible = false
 z_index = 20
 position = Vector2(329, 181)
 texture = ExtResource("3_fpk4w")
