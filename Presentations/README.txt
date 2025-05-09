@@ -1,5 +1,7 @@
 Mayor Cat Adventure
 
+Mayor Cat Adventure is a game where you play as a cat mayor of the town, helping the local villagers with tasks. As mayor your goal is to make the town a welcoming and safe place fit for more citizens. The town is a place of diversity with multiple different animal species. Your job is to help them adjust to the town! Throughout the game you will travel between different maps, interact with town citizens, play educational minigames, and complete quests.
+
 This file will go further into detail pertaining each script involved in our project.
 
 Contacts:
