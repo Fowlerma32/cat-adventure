@@ -6,6 +6,7 @@ signal stones_visited_changed
 var search_quest_name: String = "Search Quest"
 var search_quest_description: String = "Go and find pink quartz"
 var search_reached_goal: String = "Give the pink quartz to the penguins"
+var return_quartz: String = "Return to the messenger"
 
 func start_quest() -> void:
 	if quest_status == QuestStatus.available:
@@ -45,3 +46,7 @@ func reached_goal() -> void:
 		quest_status = QuestStatus.reached_goal
 		QuestDescription.text = search_reached_goal
 		print("Ready to deliver rose quartz!")
+		
+func return_messenger() -> void:
+	QuestDescription.text = return_quartz
+	print("Return to the messenger!")

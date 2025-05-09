@@ -1,0 +1,135 @@
+~ M_Intro
+if !Global.has_met_messenger:
+	set Global.has_met_messenger = true
+	Mayor: Hello! Who are you?
+	Messenger: Im the messenger! I am here to help you navigate your role as mayor!
+	Mayor: Nice to meet you!
+	- Do you have any quests for me?
+		=> accept_quest
+	- Bye!
+		=> END
+elif Global.has_met_messenger and Global.finished_quest1_flow and !Global.finished_quest2_flow:
+	=> post_quest1_intro
+elif Global.has_met_messenger and Global.finished_quest2_flow:
+	=> post_quest2_intro
+elif Global.has_met_messenger and Global.won_minigame1 and !Global.finished_quest1_flow:
+	=> finish_quest1
+elif Global.has_met_messenger and Global.has_accepted_quest1 and !Global.won_minigame1:
+	Messenger: Hurry go to the forest!
+	- Go to the forest!
+		=> END
+elif Global.has_met_messenger and Global.has_accepted_quest2 and !Global.has_returned_rock:
+	Messenger: Hurry to the mountains! The bears and penguins need your help!
+	- Go to the mountains!
+		=> END
+elif Global.has_met_messenger and !Global.has_accepted_quest1 and !Global.won_minigame1 and !Global.has_accepted_quest2:
+	Messenger: Hi Mayor!
+	Mayor: Hi Messenger!
+	- Do you have any quests for me?
+		=> accept_quest
+	- Bye
+		Messenger: Bye!
+		=> END
+elif Global.has_met_messenger and !Global.has_accepted_quest2 and !Global.has_met_every_req:
+	Messenger: Hi Mayor!
+	Mayor: Hi Messenger!
+	- Do you have any quests for me?
+		=> accept_quest
+	- Bye
+		Messenger: Bye!
+		=> END
+
+~ post_quest1_intro
+Messenger: Is there anything else I can help you with, Mayor?
+- Are there any other problems?
+	=> accept_quest2
+- Not right now.
+	=> END
+
+~ post_quest2_intro
+Messenger: Is there anything else I can help you with, Mayor?
+- Are there any other problems?
+	=> accept_quest
+- Not right now.
+	=> END
+
+~ accept_quest
+Messenger: We need your help! The deer are eating poisonous plants and the bears and penguins are about to fight!
+Mayor: Oh no! I must help them!
+- Help the deer
+	=> accept_quest1
+- Help the penguins and polar bears
+	=> accept_quest2
+- Nevermind
+	=> END
+
+~ accept_quest1
+Messenger: We need your help! The deer are eating poisonous plants!
+Mayor: Oh no!
+- Help the deer
+	=> quest_req1
+- Nevermind
+	=> END
+
+~ accept_quest2
+Messenger: We need your help! The bears and penguins are about to fight!
+Mayor: Oh no! I must help them!!!
+- Help the penguins and polar bears
+	=> quest_req2
+- Nevermind
+	=> END
+
+
+~ quest_req1
+if Global.has_met_messenger and !Global.won_minigame1:
+	set Global.has_accepted_quest1 = true
+	Messenger: MAYOR! MAYOR! MAYOR! MAYOR! We have an emergency!
+	Mayor: Calm down, Messenger. What’s wrong?
+	Messenger: It’s an emergency!The deers are eating poisonous plants! We have to do something!
+	Mayor: What! We must get there immediately! Let's go to the forest first
+	- Go to the forest
+		=> END
+elif !Global.won_minigame1 and !Global.finished_quest_text:
+	Messenger: Hurry! Go to the forest!
+	=> END
+
+~ finish_quest1
+if Global.won_minigame1:
+	Messenger: Congrats! The deer are very grateful for your help!
+	set Global.finished_quest_text = true
+	set Global.finished_quest1_flow = true
+	- No problem!
+		Messeger: *Chirps*
+		=> post_quest1_intro
+	- Are there any other problems?
+		Messenger: Yes! We still need your help!
+		=> accept_quest2
+
+~ quest1_completed
+Messenger: The forest is much safer now, thanks to you!
+set Global.finished_quest_text = true
+- Glad to help!
+	=> END
+- What's next?
+	=> accept_quest2
+
+~ quest_req2
+if Global.has_met_messenger:
+	set Global.has_accepted_quest2 = true
+	Messenger: MAYOR! MAYOR! MAYOR! We have an emergency!!!
+	Mayor: Calm down, what's wrong?
+	Messenger: The penguins and polar bears about to fight!
+	- Go to the mountains!
+		=> END
+elif !Global.finished_quest2_text:
+	Messenger: Hurry!!!
+	- Go to the mountains!
+		=> END
+
+~ finish_quest2
+if Global.has_returned_rock:
+	set Global.finished_quest2_text = true
+	set Global.finished_quest2_flow = true
+	Messenger: Congrats! The penguins and polar bears are thankful for your help!
+	- You're welcome!
+		=> post_quest2_intro
