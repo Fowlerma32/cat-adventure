@@ -2,9 +2,7 @@
 Cat Mayor: Formed during the Paleozoic Era or earlier in Precambrian Time
 Cat Mayor: Created when Limestone goes through extreme heat and pressure also called metamorphism
 Cat Mayor: Marble has been involved in many countries’ history and culture such as Egypt, Greece, India, and more!
-Cat Mayor: A famous building with marble is the Taj Mahal! 
-Cat Mayor: This is not the rock we are looking for!
-- Try Again 
+Cat Mayor: A famous building with marble is the Taj Mahal!
 
 Cat Mayor: Answer the question in order to advance. 
 Which of the following creates marble?
@@ -12,8 +10,8 @@ Which of the following creates marble?
 - Limestone
 	  => END
 - Obsidian 
-	=> Marble_info 
 	Cat Mayor: Incorrect! Try again.
+	=> Marble_info 
 - Stone and fire
 	Cat Mayor: Wrong! This makes no sense
 	=> Marble_info

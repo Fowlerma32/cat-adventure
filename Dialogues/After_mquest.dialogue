@@ -8,5 +8,6 @@ Penguins: ….
 Penguin Leader: I did not realize that I dropped it… we will apologize to the bears. Thank you for all your help, Mayor and Messenger.
 
 Mayor Cat and Messenger: No problem! Let us know if you need any other help!
+set Global.has_returned_rock = true
 - Return to Main Town
 => END
