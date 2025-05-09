@@ -5,7 +5,7 @@ extends Area2D
 func _on_body_entered(body: Node2D) -> void:
 	if body.is_in_group("Player"):
 		if bearQuest.quest_status == bearQuest.QuestStatus.available:
-			bearQuest.start_quest()
+			bearQuest.reached_goal()
 			
 		elif bearQuest.quest_status == bearQuest.QuestStatus.reached_goal:
 			bearQuest.finish_quest()

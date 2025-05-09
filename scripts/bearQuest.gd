@@ -1,8 +1,8 @@
 class_name QuestOne extends QuestManager
 
-var bear_quest_name: String = "Talk to the Bears"
-var bear_quest_description: String = "Go to the bear side and speak with the bears"
-var bear_reached_goal_text: String = "Chat with bears"
+var bear_quest_name: String = "Mountain Quest"
+var bear_quest_description: String = "Go to the penguin side and speak with the penguins"
+var bear_reached_goal_text: String = "Talk with the bears to hear their side of the story"
 
 func start_quest() -> void:
 	if quest_status == QuestStatus.available:

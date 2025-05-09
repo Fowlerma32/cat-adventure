@@ -15,6 +15,8 @@ func _ready() -> void:
 	minimap_viewport.world_2d = World2D.new() #makes the viewport its own world
 	minimap_display.texture = minimap_viewport.get_texture() #shows minimap
 	minimap_camera.position += Vector2(-100, -15) #sets camera position properly
+	if Global.finished_quest1_flow:
+		GameManager.update()
 
 #handles player transition into forest map
 func _on_main_to_forest_transition_body_entered(body: Node2D) -> void:

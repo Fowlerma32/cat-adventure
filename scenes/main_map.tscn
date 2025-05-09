@@ -1368,7 +1368,7 @@ tile_set = SubResource("TileSet_7bpu7")
 [node name="Messenger" type="Area2D" parent="."]
 
 [node name="Messenger" type="Sprite2D" parent="Messenger"]
-z_index = 25
+z_index = 2
 position = Vector2(92, -115)
 texture = ExtResource("13_46lhv")
 

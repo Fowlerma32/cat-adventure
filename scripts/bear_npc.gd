@@ -6,6 +6,7 @@ func _process(delta):
 			var collider = get_collider(i)
 			if collider.name == "Player" and Input.is_action_just_pressed("start_dialogue"):
 				SearchQuest.start_quest()
-				DialogueManager.show_dialogue_balloon(load("res://Dialogues/Meeting_Bears.dialogue"), "Meeting_Bears")
+				Global.has_spoken_with_bears = true
+				DialogueManager.show_dialogue_balloon(load("res://Dialogues/Meeting_bears.dialogue"), "Meeting_Bears")
 			else:
 				SearchQuest.finish_quest()

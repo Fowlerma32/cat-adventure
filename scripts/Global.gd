@@ -19,10 +19,14 @@ var has_accepted_quest2: bool = false
 var finished_quest_text: bool = false
 var finished_quest2_text: bool = false
 
+var has_spoken_with_penguins = false
+var has_spoken_with_bears = false
+var has_picked_up_rock = false
+
 var has_returned_rock: bool = false
 
 var finished_quest1_flow: bool = false
-var finish_quest2_flow: bool = false
+var finished_quest2_flow: bool = false
 
 #Bool var that dicates whether the player finished the minigame
 #ensures that the player cant play the minigame multiple times
