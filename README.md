@@ -5,7 +5,10 @@ Mayor Cat Adventure is a game where you play as a cat mayor of the town, helping
   - Melissa Fowler: maf22@hood.edu  
   - Ghazal Hami: gh8@hood.edu  
   - Kayla Meistrell: km38@hood.edu
-  
+
+- **GitHub Repository**:
+  - https://github.com/Fowlerma32/cat-adventure
+
 **Tech Stack:**
   - Game Engine: Godot v4.3
   - Programming Language: GDScript
@@ -19,7 +22,7 @@ Mayor Cat Adventure is a game where you play as a cat mayor of the town, helping
 - `/addons` Contains the Dialogue Manager addon created by Nathan Hoad. Used for NPC dialogues in the game
 - `/Dialogues` Contains the dialogue for NPCs and quests
 - `/Fonts` Contains fonts used in the UI
-- `/README.md` The current read me file
+- `/Executables` Folder containing the executable version of the game.
 
 **Features:**
   - Explore different maps
@@ -28,8 +31,14 @@ Mayor Cat Adventure is a game where you play as a cat mayor of the town, helping
   - Play educational minigames
 	
 **How to download:**
+There are two options for downloading and playing the game. To download only the game itself without any of the source code:
+  - Download the executables folder in the GitHub repository
+  - Extract the files
+  - Run Cat Adventure Game.exe
+
+To download everything:
   - Download Godot v4.3
-  - Clone the GitHub
+  - Clone the GitHub repository
   - Import the project into Godot
   - Run the game
 
@@ -37,4 +46,4 @@ Mayor Cat Adventure is a game where you play as a cat mayor of the town, helping
   - Use WASD or the arrow keys to move
   - Press E to interact with NPCs
   - Press ESC to open the pause menu
-  - Use the mouse to interact with buttons and play the minigames
+  - Use the left mouse button to interact with buttons in-game, play the minigames, and advance the dialogue.
