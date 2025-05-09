@@ -39,7 +39,7 @@ func _physics_process(_delta: float) -> void:
 	direction.x = Input.get_action_strength("right") - Input.get_action_strength("left")
 	direction.y = Input.get_action_strength("down") - Input.get_action_strength("up")
 	
-	velocity = direction * movement_speed
+	velocity = direction * (movement_speed + 100)
 	
 	# Update animation based on movement direction
 	if direction.x > 0: # Moving right

@@ -7,7 +7,7 @@ func _ready():
 	SearchQuest.stones_visited_changed.connect(_update_collectible)
 	
 func _update_collectible():
-	can_collect = SearchQuest.stones_visited.size() >=4
+	can_collect = SearchQuest.stones_visited.size() >=1
 	Global.finished_second_minigame = true
 	
 func _on_body_entered(body: Node2D) -> void:
