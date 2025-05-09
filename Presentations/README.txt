@@ -4,6 +4,8 @@ Mayor Cat Adventure is a game where you play as a cat mayor of the town, helping
 
 This file will go further into detail pertaining each script involved in our project.
 
+Date: 5/9/2025
+
 Contacts:
 
 Melissa Fowler: maf22@hood.edu
