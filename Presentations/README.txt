@@ -57,11 +57,6 @@ Contains the scripts necessary to combine and handle elements and features of th
 /diorite_stone.gd, /quartz_stone.gd, /RoseQuartzStone.gd, and /marble_stone hold functions that call once the mountain map quest is started. This will dictate where the UI is placed and how the user can interact with each rock script.
 /bear_npc.gd, /penguin_npc.gd, /penguin_interact.gd, and /messenger_2d_cast.gd handles the 2DRaycast that upon entered by the player and correctly inputting the key of 'e' the dialogue properly starts and connects with the quest scripts.
 
-/addons 
-
-Contains the Dialogue Manager addon created by Nathan Hoad. Used for NPC dialogues in the game. This addon can simply be downloaded through the Godot engine and on the official website.
-
-
 /Dialogues 
 
 Contains the dialogue for NPCs and quests. For example:
@@ -71,10 +66,6 @@ Contains the dialogue for NPCs and quests. For example:
 /Meeting_bears.dialogue handles the bear quest dialogue for the search quest.
 /Diorite_info.dialogue, /Granite_info.dialogue, /RoseQuartz_info.dialogue, and /Quartz_info.dialogue handles the dialogue for the rock trivia that is connected and a key asset of the search quest.
 
-
-/Fonts Contains fonts used in the UI
-
-/CascadiaMono.ttf is the font used in most UI.
 
 /Executables Folder containing the executable version of the game.
 
