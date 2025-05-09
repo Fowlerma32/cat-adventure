@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dfio72vtb4s5w"]
+[gd_scene load_steps=5 format=3 uid="uid://dfio72vtb4s5w"]
 
 [ext_resource type="Script" path="res://scripts/game_manager.gd" id="1_gwqqx"]
 [ext_resource type="Texture2D" uid="uid://vn3gjxtecumi" path="res://assets/QuestBox.png" id="2_jvari"]
 [ext_resource type="FontFile" uid="uid://bg0fr445iaoma" path="res://Fonts/CascadiaMono.ttf" id="3_uwf3o"]
+[ext_resource type="AudioStream" uid="uid://peaaheurs1yo" path="res://assets/Music/CatAdventureGame_Music.mp3" id="4_amcla"]
 
 [node name="GameManager" type="Node"]
 script = ExtResource("1_gwqqx")
@@ -32,3 +33,9 @@ theme_override_fonts/normal_font = ExtResource("3_uwf3o")
 theme_override_font_sizes/normal_font_size = 5
 bbcode_enabled = true
 text = "Quest Description"
+
+[node name="CatAdventureGameMusic" type="AudioStreamPlayer" parent="."]
+process_mode = 3
+stream = ExtResource("4_amcla")
+volume_db = -28.4
+autoplay = true
