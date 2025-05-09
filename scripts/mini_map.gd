@@ -15,12 +15,15 @@ func _process(_delta: float) -> void:
 	#handle placing exclamation points on the minimap
 	if Global.current_scene == "MainMap":
 		messenger.visible = true
+		main_exclamation.visible = true
 		forest_exclamation.visible = false
 		mountain_exclamation.visible = false
-		if !Global.has_met_messenger || Global.won_minigame1:
+		if !Global.has_met_messenger || (Global.won_minigame1 and !Global.finished_quest1_flow) || (Global.has_returned_rock and !Global.finished_quest2_flow) :
 			main_exclamation.position = messenger.position
-		elif !Global.won_minigame1:
+		elif !Global.won_minigame1 and Global.has_accepted_quest1 and !Global.finished_quest1_flow:
 			main_exclamation.position = Vector2(-400,248)
+		elif !Global.finished_second_minigame and Global.has_accepted_quest2:
+			main_exclamation.position = Vector2(-454,-257)
 		else:
 			main_exclamation.visible = false
 	elif Global.current_scene == "Forest":
@@ -36,9 +39,17 @@ func _process(_delta: float) -> void:
 	elif Global.current_scene == "Mountain":
 		messenger.visible = false
 		mountain_exclamation.visible = true
-		mountain_exclamation.position = Vector2(161,259)
 		main_exclamation.visible = false
 		forest_exclamation.visible = false
+		if !Global.has_accepted_quest2 || Global.has_returned_rock:
+			mountain_exclamation.position = Vector2(159,255)
+		elif !Global.has_spoken_with_penguins || Global.has_picked_up_rock:
+			mountain_exclamation.position = Vector2(401,170)
+		elif !Global.has_spoken_with_bears:
+			mountain_exclamation.position = Vector2(-121,144)
+		else:
+			mountain_exclamation.visible = false
+		
 		
 
 func _ready() -> void:

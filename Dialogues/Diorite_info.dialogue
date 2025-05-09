@@ -1,18 +1,18 @@
 ~ Diorite_info
-Cat Mayor: It is formed when magma is trapped beneath the Earth’s surface and slowly cools, crystallizing into a mixture of minerals. 
-Cat Mayor: The colors and texture of diorite are influenced by sodium-calcium plagioclase, biotite, hornblende, and sometimes quartz
-Cat Mayor: The  Code of Hammurabi is inscribed on a 2-meter black diorite pillar, now located in the Musée de Louvre in Paris.
+Mayor: It is formed when magma is trapped beneath the Earth’s surface and slowly cools, crystallizing into a mixture of minerals. 
+Mayor: The colors and texture of diorite are influenced by sodium-calcium plagioclase, biotite, hornblende, and sometimes quartz
+Mayor: The  Code of Hammurabi is inscribed on a 2-meter black diorite pillar, now located in the Musée de Louvre in Paris.
 
-Cat Mayor: Answer the question in order to advance. 
+Mayor: Answer the question in order to advance. 
 Which famous code was inscribed on diorite?
 
 - The Code of Hammurabi
 	=> END
 - The Ten Commandments
 	=> Diorite_info 
-	Cat Mayor: Incorrect! Try again.
+	Mayor: Incorrect! Try again.
 - The Rosetta Stone
-	Cat Mayor: Wrong! The Rosetta Stone was granite.
+	Mayor: Wrong! The Rosetta Stone was granite.
 	=> Diorite_info
-	Cat Mayor: Incorrect! Try again.
+	Mayor: Incorrect! Try again.
 => END

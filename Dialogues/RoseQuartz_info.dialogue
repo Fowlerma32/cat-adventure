@@ -1,17 +1,17 @@
 ~ RoseQuartz_info
-Cat Mayor: Rose quartz is normally associated with love, beauty, healing, and emotional balance
-Cat Mayor: Evidence of its use dates back to 7000 BC in Mesopotamia(Iraq today)
-Cat Mayor: Rose quartz gets its pink color from small amounts of impurities, like titanium, iron, or manganese, which replace some silicon atoms in the quartz. This causes it to absorb certain light and reflect pink light.
+Mayor: Rose quartz is normally associated with love, beauty, healing, and emotional balance
+Mayor: Evidence of its use dates back to 7000 BC in Mesopotamia(Iraq today)
+Mayor: Rose quartz gets its pink color from small amounts of impurities, like titanium, iron, or manganese, which replace some silicon atoms in the quartz. This causes it to absorb certain light and reflect pink light.
 
-Cat Mayor: Answer the question in order to advance. 
+Mayor: Answer the question in order to advance. 
 What does Rose Quartz represent?
 - Love, beauty, healing, and emotional balance
 	  => END
 - Money and Power 
 	=> RoseQuartz_info 
-	Cat Mayor: It would be cook but Incorrect!
+	Mayor: It would be cool but Incorrect!
 - Luck and protection
-	Cat Mayor: Wrong!
+	Mayor: Wrong!
 	=> RoseQuartz_info
 
 => END

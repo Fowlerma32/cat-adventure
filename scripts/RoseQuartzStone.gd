@@ -16,4 +16,5 @@ func _on_body_entered(body: Node2D) -> void:
 			load("res://Dialogues/RoseQuartz_info.dialogue"), "RoseQuartz_info")
 		await DialogueManager.dialogue_ended
 		SearchQuest.register_stone_visited(ROSE_NAME)
+		Global.has_picked_up_rock = true
 		queue_free()

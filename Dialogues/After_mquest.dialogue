@@ -1,13 +1,13 @@
 ~ Finishing_quest
 Penguin Leader: You found it! I knew they took it!
 
-Mayor Cat: No, they didn’t. I found it near a bunch of other rocks in the mountains. 
+Mayor: No, they didn’t. I found it near a bunch of other rocks in the mountains. 
 
 Penguins: ….
 
-Penguin Leader: I did not realize that I dropped it… we will apologize to the bears. Thank you for all your help, Mayor and Messenger.
+Penguin Leader: I did not realize that I dropped it… we will apologize to the bears. Thank you for all your help, Mayor.
 
-Mayor Cat and Messenger: No problem! Let us know if you need any other help!
+Mayor: No problem! Let me know if you need any other help!
 set Global.has_returned_rock = true
 - Return to Main Town
 => END

@@ -68,17 +68,17 @@ func _process(delta):
 					DialogueManager.show_dialogue_balloon(load("res://Dialogues/Messenger_Intro.dialogue"), "M_Intro")
 				match Global.finished_quest_text:
 					true:
-						print("Global.finished_quest_text is:", Global.finished_quest_text)
+						#print("Global.finished_quest_text is:", Global.finished_quest_text)
 						Quest.finish_quest()
 				match Global.has_accepted_quest1:
 					true:
-						print("Global.has_accepted_quest1 is:", Global.has_accepted_quest1)
+						#print("Global.has_accepted_quest1 is:", Global.has_accepted_quest1)
 						Quest.start_quest()
 				match Global.has_accepted_quest2:
 					true:
-						print("Global.has_accepted_quest2 is:", Global.has_accepted_quest2)
+						#print("Global.has_accepted_quest2 is:", Global.has_accepted_quest2)
 						BearQuest.start_quest()
 				match Global.finished_quest2_text:
 					true:
-						print("Global.finished_quest2_text is:", Global.finished_quest2_text)
+						#print("Global.finished_quest2_text is:", Global.finished_quest2_text)
 						SearchQuest.finish_quest()
